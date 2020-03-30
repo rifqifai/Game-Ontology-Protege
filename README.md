@@ -3,3 +3,75 @@ Game merupakan salah satu media teknologi yang banyak digemari masyarakat, mulai
 
 # Diagram Ontologi
 ![diagram ontologi](https://github.com/rifqifai/Game-Ontology-Protege/blob/master/game.jpg)
+
+# Query menggunakan SPARQL query
+1. Tampilkan semua atmosphere yang ada dalam game.
+```SQL
+SELECT ?atmosphere
+WHERE {
+?atmosphere rdf:type game:Atmosphere
+}
+```
+2. Tampilkan semua game play yang ada dalam game.
+```SQL
+SELECT ?gamePlay
+WHERE {
+?gamePlay rdf:type game:GamePlay
+}
+```
+3. Tampilkan semua genre permainan.
+```SQL
+SELECT ?genre
+WHERE {
+?genre rdf:type game:Genre
+}
+```
+1. Tampilkan semua atmosphere yang ada dalam game.
+```SQL
+SELECT ?atmosphere
+WHERE {
+?atmosphere rdf:type game:Atmosphere
+}
+```
+1. Tampilkan semua atmosphere yang ada dalam game.
+```SQL
+SELECT ?atmosphere
+WHERE {
+?atmosphere rdf:type game:Atmosphere
+}
+```
+1. Tampilkan semua atmosphere yang ada dalam game.
+```SQL
+SELECT ?atmosphere
+WHERE {
+?atmosphere rdf:type game:Atmosphere
+}
+```
+1. Tampilkan semua atmosphere yang ada dalam game.
+```SQL
+SELECT ?atmosphere
+WHERE {
+?atmosphere rdf:type game:Atmosphere
+}
+```
+1. Tampilkan semua atmosphere yang ada dalam game.
+```SQL
+SELECT ?atmosphere
+WHERE {
+?atmosphere rdf:type game:Atmosphere
+}
+```
+1. Tampilkan semua atmosphere yang ada dalam game.
+```SQL
+SELECT ?atmosphere
+WHERE {
+?atmosphere rdf:type game:Atmosphere
+}
+```
+1. Tampilkan semua atmosphere yang ada dalam game.
+```SQL
+SELECT ?atmosphere
+WHERE {
+?atmosphere rdf:type game:Atmosphere
+}
+```
