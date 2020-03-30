@@ -73,7 +73,7 @@ cake:hasNumberOfPlayers ?NumberOfPlayers
 FILTER (?NumberOfPlayers >1)
 }
 ```
-1. Cari game yang bernama GrandTheftAuto
+10. Cari game yang bernama GrandTheftAuto
 ```SQL
 SELECT ?subject 
 WHERE {
