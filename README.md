@@ -26,32 +26,33 @@ WHERE {
 ?genre rdf:type game:Genre
 }
 ```
-1. Tampilkan semua atmosphere yang ada dalam game.
+4. Tampilkan semua daftar permainan
 ```SQL
-SELECT ?atmosphere
+SELECT ?namedGames
 WHERE {
-?atmosphere rdf:type game:Atmosphere
+?namedGames rdf:type game:NamedGames
 }
 ```
-1. Tampilkan semua atmosphere yang ada dalam game.
+5. Tampilkan semua jenis player
 ```SQL
-SELECT ?atmosphere
+SELECT ?numberOfPlayers
 WHERE {
-?atmosphere rdf:type game:Atmosphere
+?numberOfPlayers rdf:type game:NumberOfPlayers
 }
 ```
-1. Tampilkan semua atmosphere yang ada dalam game.
+6. Tampilkan semua jenis platform permainan
 ```SQL
-SELECT ?atmosphere
+SELECT ?platform
 WHERE {
-?atmosphere rdf:type game:Atmosphere
+?platform rdf:type game:Platform
 }
 ```
-1. Tampilkan semua atmosphere yang ada dalam game.
+7. Tampilkan daftar permainan yang berjenis multiplayer
 ```SQL
-SELECT ?atmosphere
+SELECT ?game
 WHERE {
-?atmosphere rdf:type game:Atmosphere
+?game rdf:type game:NamedGames
+FILTER (?NumberOfPlayers >1)
 }
 ```
 1. Tampilkan semua atmosphere yang ada dalam game.
