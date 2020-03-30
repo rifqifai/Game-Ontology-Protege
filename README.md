@@ -55,24 +55,29 @@ WHERE {
 FILTER (?NumberOfPlayers >1)
 }
 ```
-1. Tampilkan semua atmosphere yang ada dalam game.
+8. Tampilkan game yang mempunyai atmosphere adventurous
 ```SQL
-SELECT ?atmosphere
+SELECT ?game
 WHERE {
-?atmosphere rdf:type game:Atmosphere
+?game game:hasAtmosphere cake:Adventurous
 }
 ```
-1. Tampilkan semua atmosphere yang ada dalam game.
+9. Tampilkan game yang mempunyai atmosphere aggressive dengan jenis player adalah multiplayer yang memiliki platform dan genre
 ```SQL
-SELECT ?atmosphere
+SELECT ?game
 WHERE {
-?atmosphere rdf:type game:Atmosphere
+?game game:hasAtmosphere cake:Aggressive;
+game:hasPlatform ?Platform;
+cake:hasGenre ?Genre
+cake:hasNumberOfPlayers ?NumberOfPlayers
+FILTER (?NumberOfPlayers >1)
 }
 ```
-1. Tampilkan semua atmosphere yang ada dalam game.
+1. Cari game yang bernama GrandTheftAuto
 ```SQL
-SELECT ?atmosphere
+SELECT ?subject 
 WHERE {
-?atmosphere rdf:type game:Atmosphere
+if(!(Atmosphere.equals("GrandTheftAuto")))
+queryString += "?subject sw:hasAtmosphere game:" + Atmosphere 
 }
 ```
